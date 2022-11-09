@@ -93,7 +93,7 @@ void mousePressed() {
   //Mouse Pressed will control background image
   if ( mouseButton == LEFT) {
     nightMode = true;
-    
+    rect(backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
     tint(tintRed, tintGreen, TintBlue, tintNightModeOpacity); //RGB: Night Mode
     image( pic, backgroundImageX, backgroundImageY, picWidthAdjusted, picHeightAdjusted);
   }
